@@ -1,3 +1,4 @@
+
 #include <Servo.h>
 
 Servo myservo;  // create servo object to control a servo
@@ -9,9 +10,9 @@ int upButtonState = 0;
 int downButtonState = 0;
 
 void setup() {
-  myservo.attach(9);  // attaches the servo on pin 9 to the servo object
+  myservo.attach(2);  // attaches the servo on pin 9 to the servo object
   //pinMode(buttonPin, INPUT);
-  Serial.begin(1);
+  Serial.begin(9600);
   myservo.write(0);
 }
 
@@ -34,7 +35,7 @@ void loop() {
     }
   }
   
-  delay(1);
+  delay(10);
 
 
   // potentiometer... FAIL :(
