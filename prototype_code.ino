@@ -22,7 +22,7 @@ void loop() {
   upButtonState = digitalRead(A1); // up 
   downButtonState = digitalRead(A0); // down 
   if (upButtonState == HIGH) {
-    if (pos < 90) {
+    if (pos < 110) {
       pos = pos + 1;
       myservo.write(pos);
     }
