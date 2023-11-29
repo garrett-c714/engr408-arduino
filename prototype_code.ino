@@ -10,7 +10,7 @@ int upButtonState = 0;
 int downButtonState = 0;
 
 void setup() {
-  myservo.attach(2);  // attaches the servo on pin 9 to the servo object
+  myservo.attach(2);  // attaches the servo on pin 2 to the servo object
   //pinMode(buttonPin, INPUT);
   Serial.begin(9600);
   myservo.write(0);
